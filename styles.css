@@ -13,3 +13,6 @@
     src: url(Fonts/Playfair-Display.ttf);
 }
 
+a {
+    font-family: 'Giga-Sans-Light';
+}
