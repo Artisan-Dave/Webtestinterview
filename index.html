@@ -12,11 +12,12 @@
   <!-- Navigation Bar -->
   <nav class="navbar fixed-top navbar-expand-lg bg-transparent" style="z-index: 1000;">
     <div class="container-fluid">
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button onclick="onToggleMenu()" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 me-0 gap-3 align-items-center">
           <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#aboutus">About us</a></li>
@@ -48,7 +49,8 @@
             <div class="text-black">
               <p class="fs-3 mb-1" style="font-family: 'Playfair-Display', sans-serif;">Your Skin Matters</p>
               <p class="mb-1" style="font-family: 'Giga-Sans-Light',sans-serif;">Formulated for perfection.</p>
-              <p class="mb-0" style="font-family: 'Giga-Sans-Light', sans-serif;">Your skin<span style="font-family: sans-serif;">'</span>s partner for a better you.</p>
+              <p class="mb-0" style="font-family: 'Giga-Sans-Light', sans-serif;">Your skin<span
+                  style="font-family: sans-serif;">'</span>s partner for a better you.</p>
             </div>
           </div>
         </div>
@@ -57,10 +59,11 @@
   </section>
 
   <script>
-    const navLinks = document.querySelector('.nav-links')
-    function onToggleMenu(e) {
-      e.name = e.name === 'menu' ? 'close' : 'menu'
-      navLinks.classList.toggle('top-[9%]')
+    const hamburger = document.querySelector('.navbar-toggler-icon');
+
+    function onToggleMenu() {
+      // Toggle the class to switch between icons
+      hamburger.classList.toggle('btn-close');
     }
   </script>
   <script src="js/bootstrap.min.js"></script>
