@@ -5,33 +5,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <!-- Navigation Bar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-transparent" style="z-index: 1000;">
     <div class="container-fluid">
-      <div class="container">
-        <img class="img-fluid" src="Assets/Logo.png" width="30" height="24">
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
+        <ul class="navbar-nav mb-2 mb-lg-0 me-0 gap-3 align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aboutus">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contactus">Contact us</a></li>
         </ul>
-        
       </div>
     </div>
   </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="position-relative" style="height: 100vh;">
+    <div class="container-fluid px-0 h-100 overflow-x-hidden">
+      <div class="row h-100 position-relative">
+
+        <!-- Background Image for Right Side -->
+        <div class="position-absolute top-0 end-0 h-100 w-100 d-md-block d-none" style="width: 66.666%; z-index: 0;">
+          <img src="Assets/Model 1.jpg" alt="Model" class="w-100 h-100 object-fit-cover">
+        </div>
+
+        <!-- Left Content -->
+        <div class="col-md-4 text-center d-flex align-items-center justify-content-center z-1">
+          <div class="bg-white bg-opacity-75 p-4 rounded shadow">
+            <!-- Logo -->
+            <div class="mb-3">
+              <img src="Assets/Logo.png" alt="Tori Skin Logo" class="img-fluid" style="max-width: 120px;">
+            </div>
+            <!-- Taglines -->
+            <div class="text-black">
+              <p class="fs-3 mb-1" style="font-family: 'Playfair-Display', sans-serif;">Your Skin Matters</p>
+              <p class="mb-1" style="font-family: 'Giga-Sans-Light',sans-serif;">Formulated for perfection.</p>
+              <p class="mb-0" style="font-family: 'Giga-Sans-Light', sans-serif;">Your skin<span style="font-family: sans-serif;">'</span>s partner for a better you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script>
     const navLinks = document.querySelector('.nav-links')
@@ -40,7 +63,7 @@
       navLinks.classList.toggle('top-[9%]')
     }
   </script>
-    <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
 </body>
 

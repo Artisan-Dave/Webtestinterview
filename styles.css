@@ -1,3 +1,8 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
 @font-face {
     font-family: 'Giga-Sans-Bold';
     src: url(Fonts/Giga-Sans-Bold.otf);
@@ -13,6 +18,19 @@
     src: url(Fonts/Playfair-Display.ttf);
 }
 
-a {
-    font-family: 'Giga-Sans-Light';
+.nav-item {
+    font-family: 'Giga-Sans-Light',sans-serif;
 }
+
+.Gsl {
+    font-family: 'Giga-Sans-Light',sans-serif;
+}
+
+.navbar-collapse {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-collapse.show {
+    background-color: #f8f9fa; /* light gray or use your theme */
+  }
