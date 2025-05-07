@@ -10,7 +10,7 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-transparent" style="z-index: 1000;">
+  <nav class="navbar fixed-top navbar-expand-lg" style="z-index: 1000;">
     <div class="container-fluid">
       <button onclick="onToggleMenu()" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -29,33 +29,39 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="position-relative" style="height: 100vh;">
-    <div class="container-fluid px-0 h-100 overflow-x-hidden">
-      <div class="row h-100 position-relative">
-
-        <!-- Background Image for Right Side -->
-        <div class="position-absolute top-0 end-0 h-100 w-100 d-md-block d-none" style="width: 66.666%; z-index: 0;">
-          <img src="Assets/Model 1.jpg" alt="Model" class="w-100 h-100 object-fit-cover">
-        </div>
-
-        <!-- Left Content -->
-        <div class="col-md-4 text-center d-flex align-items-center justify-content-center z-1">
-          <div class="bg-white bg-opacity-75 p-4 rounded shadow">
-            <!-- Logo -->
-            <div class="mb-3">
-              <img src="Assets/Logo.png" alt="Tori Skin Logo" class="img-fluid" style="max-width: 120px;">
-            </div>
-            <!-- Taglines -->
-            <div class="text-black">
-              <p class="fs-3 mb-1" style="font-family: 'Playfair-Display', sans-serif;">Your Skin Matters</p>
-              <p class="mb-1" style="font-family: 'Giga-Sans-Light',sans-serif;">Formulated for perfection.</p>
-              <p class="mb-0" style="font-family: 'Giga-Sans-Light', sans-serif;">Your skin<span
-                  style="font-family: sans-serif;">'</span>s partner for a better you.</p>
+  <section id="home" class="vh-100">
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+        <!-- Left Column -->
+        <div class="col-md-5 d-flex flex-column justify-content-between align-items-center p-4 border-end">
+          
+          <!-- Centered Tagline Block -->
+          <div class="flex-grow-1 d-flex align-items-center w-100">
+            <div class="w-100 text-center">
+              <p class="fs-1 mb-0" style="font-family: 'Playfair-Display', sans-serif;">Your Skin Matters</p>
+              <p class="mb-0 fs-5" style="font-family: 'Giga-Sans-Light', sans-serif;">Formulated for perfection.</p>
+              <p class="mt-0 fs-5" style="font-family: 'Giga-Sans-Light', sans-serif;">
+                Your skin<span style="font-family: sans-serif;">'</span>s partner for a better you.
+              </p>
             </div>
           </div>
+    
+          <!-- Logo at the Bottom, Responsive and Aligned -->
+          <div class="text-center w-100">
+            <img src="Assets/Logo.png" alt="Logo" class="img-fluid" style="max-width: 180px;">
+          </div>
+        </div>
+    
+        <!-- Right Column (Image Side) -->
+        <div class="col-md-7 px-0">
+          <img src="Assets/Model 1.jpg" alt="Photo" class="img-fluid w-100 h-100 object-fit-cover">
         </div>
       </div>
     </div>
+  </section>
+
+  <section>
+    
   </section>
 
   <script>
