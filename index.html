@@ -9,64 +9,100 @@
 </head>
 
 <body>
+  <!-- TODO: background color for navbar -->
   <!-- Navigation Bar -->
-  <nav class="navbar fixed-top navbar-expand-lg" style="z-index: 1000;">
+  <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container-fluid">
       <button onclick="onToggleMenu()" class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse h-100 w-100 rounded-1" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 me-0 gap-3 align-items-center">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#aboutus">About us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contactus">Contact us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home" onclick="setActive(this)">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aboutus" onclick="setActive(this)">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services" onclick="setActive(this)">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contactus" onclick="setActive(this)">Contact us</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Section-1 -->
-  <section id="home" class="vh-100">
-    <div class="container-fluid">
-      <div class="row min-vh-100 bg-body-tertiary">
+  <!-- Main Section -->
+  <section id="home" class="vh-100 position-relative overflow-hidden">
+    <div class="container-fluid h-100 position-relative">
+
+      <!-- Background Image -->
+      <div class="position-absolute top-0 start-0 w-100 h-100 z-n1 d-none d-md-block">
+        <img src="Assets/Model 1.jpg" alt="Photo" class="img-fluid w-100 h-100 object-fit-cover">
+      </div>
+
+      <!-- Grid Row Overlay -->
+      <div class="row position-absolute top-0 start-0 w-100 h-100 m-0">
+
         <!-- Left Column -->
-        <div class="col-md-4 d-flex flex-column justify-content-between align-items-center p-4 bg-body-tertiary">
-          
-          <!-- Centered Tagline Block -->
-          <div class="flex-grow-1 d-flex align-items-center w-100 bg-body-tertiary">
-            <div class="w-100">
-              <p class="fs-1 mb-0 text-center" style="font-family: 'Playfair-Display', sans-serif;">Your Skin Matters</p>
-              <p class="mb-0 fs-5 text-start" style="font-family: 'Giga-Sans-Light', sans-serif;">Formulated for perfection.</p>
-              <p class="mt-0 fs-5 text-start" style="font-family: 'Giga-Sans-Light', sans-serif;">
+        <div class="col-md-5 d-flex flex-column justify-content-between align-items-center p-4">
+          <div class="flex-grow-1 d-flex align-items-center w-100">
+            <div class="w-100 text-center">
+              <p class="fs-1 mb-0" style="font-family: 'Playfair-Display', sans-serif;">Your Skin Matters
+              </p>
+              <p class="mb-0 fs-5" style="font-family: 'Giga-Sans-Light', sans-serif;">Formulated for
+                perfection.</p>
+              <p class="mt-0 fs-5" style="font-family: 'Giga-Sans-Light', sans-serif;">
                 Your skin<span style="font-family: sans-serif;">'</span>s partner for a better you.
               </p>
             </div>
           </div>
-    
-          <!-- Logo at the Bottom, Responsive and Aligned -->
-          <div class="text-start w-100 bg-body-tertiary">
+          <div class="text-center w-100">
             <img src="Assets/Logo.png" alt="Logo" class="img-fluid" style="max-width: 180px;">
           </div>
         </div>
-    
-        <!-- Right Column (Image Side) -->
-        <div class="col-md-8 px-0 bg-body-tertiary">
-          <img src="Assets/Model 1.jpg" alt="Photo" class="img-fluid w-100 h-100 object-fit-cover">
-        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-7 px-0"></div>
+
       </div>
     </div>
   </section>
 
-  <!-- Section-2 -->
-  <section class="vh-100">
-    <div class="container-fluid">
-      <div class="text-center mt-5">
-        <p class="fs-6" style="font-family: 'Playfair-Display', sans-serif;">&mdash; PRODUCTS &mdash;</p>
+
+  <!-- Products -->
+  <section class="vh-100 bg-body-tertiary w-100">
+    <div class="container-fluid justify-content-center">
+      <div class="text-center pt-5">
+        <p class="fs-1" style="font-family: 'Playfair-Display', sans-serif;">&mdash; PRODUCTS &mdash;</p>
       </div>
-      
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid justify-content-between">
+          <ul class="navbar-nav mx-auto gap-5">
+            <li class="nav-item"><a href="#" class="nav-link fs-5 ">Brightening</a></li>
+            <li class="nav-item"><a href="#" class="nav-link fs-5">Anti<span
+                  style="font-family: sans-serif;">-</span>Acne</a></li>
+            <li class="nav-item"><a href="#" class="nav-link fs-5">Anti<span
+                  style="font-family: sans-serif;">-</span>Aging</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row gap-5 justify-content-center mt-5">
+        <div class="col-md-3 h-100 shadow-sm m-0 p-0">
+          <div class="card w-100">
+            <img src="Assets/Product 2.jpg" class="card-img-top" alt="...">
+            <div class="card-body rounded-5">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>        
+        <div class="col-md-3 border border-black h-100">
+          
+        </div>
+        <div class="col-md-3 border border-black h-100">
+          
+        </div>
+      </div>
     </div>
   </section>
 
@@ -76,6 +112,17 @@
     function onToggleMenu() {
       // Toggle the class to switch between icons
       hamburger.classList.toggle('btn-close');
+    }
+
+    // Function to set the active class on the clicked link
+    function setActive(element) {
+      // Remove the 'active' class from all nav links
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+      });
+
+      // Add the 'active' class to the clicked link
+      element.classList.add('active');
     }
   </script>
   <script src="js/bootstrap.min.js"></script>
