@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!-- TODO: background color for navbar -->
+  
   <!-- Navigation Bar -->
   <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container-fluid">
@@ -20,8 +20,8 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse h-100 w-100 rounded-1" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 me-0 gap-3 align-items-center">
+      <div class="collapse navbar-collapse h-auto w-100 rounded-2" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 me-0 gap-3 d-flex align-items-center">
           <li class="nav-item"><a class="nav-link Gsl" href="#home" onclick="setActive(this)">Home</a></li>
           <li class="nav-item"><a class="nav-link Gsl" href="#aboutus" onclick="setActive(this)">About us</a></li>
           <li class="nav-item"><a class="nav-link Gsl" href="#services" onclick="setActive(this)">Services</a></li>
@@ -33,10 +33,10 @@
 
   <!-- Main Section -->
   <section id="home" class="vh-100 position-relative">
-    <div class="container-fluid h-100 position-relative">
+    <div class="container-fluid h-100 position-relative px-0">
 
       <!-- Background Image -->
-      <div class="position-absolute top-0 start-0 w-100 h-100 z-n1 d-none d-md-block">
+      <div class="top-0 start-0 w-100 h-100 z-n1 d-none d-md-block">
         <img src="Assets/Model 1.jpg" alt="Photo" class="img-fluid w-100 h-100 object-fit-cover">
       </div>      
 
@@ -69,7 +69,7 @@
   </section>
 
   <!-- Products -->
-  <section class="vh-100 w-100" id="products">
+  <section class="w-100 h-100" id="products">
     <div class="container-fluid bg-body-tertiary">
       <div class="text-center pt-5">
         <p class="fs-1" style="font-family: 'Playfair-Display', sans-serif;">&mdash; PRODUCTS &mdash;</p>
@@ -79,26 +79,26 @@
       <nav class="navbar navbar-expand-md bg-body-tertiary">
         <div class="container-fluid justify-content-between">
           <ul class="navbar-nav mx-auto gap-5">
-            <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl">Brightening</a></li>
-            <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl">Anti<span
+            <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl" onclick="setActive(this)">Brightening</a></li>
+            <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl" onclick="setActive(this)">Anti<span
                   style="font-family: sans-serif;">-</span>Acne</a></li>
-            <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl">Anti<span
+            <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl" onclick="setActive(this)">Anti<span
                   style="font-family: sans-serif;">-</span>Aging</a></li>
           </ul>
         </div>
       </nav>
       <!-- Products Row -->
-      <div class="row gap-5 justify-content-center mt-5 w-auto">
+      <div class="row gap-5 d-flex justify-content-center mt-5 w-auto">
         <div class="col-md-2 h-100 m-0 p-0">
           <div class="card shadow-sm">
             <img src="Assets/Product 2.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
               <h5 class="card-title text-center Pfd">Anti-Acne Serum</h5>
-              <p class="card-text Gsl fs-6"><small>A product formulated to give you clearer skin and preventsit from
+              <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
             <div class="d-flex mx-3 my-3 justify-content-between">
-              <p class="w-auto m-0"><small>P 800</small></p>
+              <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 800</small></strong></p>
               <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
                 alt="Shoppe Logo">
             </div>
@@ -109,11 +109,11 @@
             <img src="Assets/Product 1.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
               <h5 class="card-title text-center Pfd">Anti-Acne Wash Foam</h5>
-              <p class="card-text Gsl fs-6"><small>A product formulated to give you clearer skin and preventsit from
+              <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
             <div class="d-flex mx-3 my-3 justify-content-between">
-              <p class="w-auto m-0"><small>P 800</small></p>
+              <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 1,000</small></strong></p>
               <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
                 alt="Shoppe Logo">
             </div>
@@ -124,11 +124,11 @@
             <img src="Assets/Product 1.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
               <h5 class="card-title text-center Pfd">Anti-Acne Toner</h5>
-              <p class="card-text Gsl fs-6"><small>A product formulated to give you clearer skin and preventsit from
+              <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
             <div class="d-flex mx-3 my-3 justify-content-between">
-              <p class="w-auto m-0"><small>P 800</small></p>
+              <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 650</small></strong></p>
               <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
                 alt="Shoppe Logo">
             </div>
@@ -136,17 +136,17 @@
         </div>
       </div>
       <!-- Product Row 2 -->
-      <div class="row gap-5 justify-content-center mt-5 w-auto">
+      <div class="row gap-5 d-flex justify-content-center mt-5 w-auto">
         <div class="col-md-2 h-100 m-0 p-0">
           <div class="card shadow-sm">
             <img src="Assets/Product 2.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
               <h5 class="card-title text-center Pfd">Anti-Acne Cream</h5>
-              <p class="card-text Gsl fs-6"><small>A product formulated to give you clearer skin and preventsit from
+              <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
             <div class="d-flex mx-3 my-3 justify-content-between">
-              <p class="w-auto m-0"><small>P 800</small></p>
+              <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 500</small></strong></p>
               <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
                 alt="Shoppe Logo">
             </div>
@@ -157,11 +157,11 @@
             <img src="Assets/Product 2.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
               <h5 class="card-title text-center Pfd">Anti-Acne Serum</h5>
-              <p class="card-text Gsl fs-6"><small>A product formulated to give you clearer skin and preventsit from
+              <p class="card-text Gsl "><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
             <div class="d-flex mx-3 my-3 justify-content-between">
-              <p class="w-auto m-0"><small>P 800</small></p>
+              <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 800</small></strong></p>
               <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
                 alt="Shoppe Logo">
             </div>
@@ -172,15 +172,28 @@
             <img src="Assets/Product 1.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
               <h5 class="card-title text-center Pfd">Anti-Acne Wash Foam</h5>
-              <p class="card-text Gsl fs-6"><small>A product formulated to give you clearer skin and preventsit from
+              <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
             <div class="d-flex mx-3 my-3 justify-content-between">
-              <p class="w-auto m-0"><small>P 800</small></p>
+              <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 1,000</small></strong></p>
               <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
                 alt="Shoppe Logo">
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-100 h-100">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          
+        </div>
+        <div class="col-md-6">
+          
         </div>
       </div>
     </div>

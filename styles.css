@@ -32,13 +32,10 @@
 
 /* Navbar section */
 
-.navbar {
-  transition: background-color 0.3 ease;
-  transition: 0.3s ease;
-}
-
 .navbar-collapse.show {
   background-color: white;
+  transition: 0.2s ease;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.15);
 }
 
 .navbar-scrolled {
@@ -61,7 +58,7 @@
   text-decoration: underline;
   text-decoration-color: yellowgreen; /* Color of the underline */
   text-decoration-thickness: 3px; /* Thickness of the underline */
-  text-underline-offset: 4px; /* Margin from the text (distance of underline) */
+  text-underline-offset: 5px; /* Margin from the text (distance of underline) */
 }
 
 /* Products section */
