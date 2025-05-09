@@ -18,36 +18,53 @@
   src: url(Fonts/Playfair-Display.ttf);
 }
 
-.nav-item {
-  font-family: "Giga-Sans-Light", sans-serif;
-}
-
 .Gsl {
   font-family: "Giga-Sans-Light", sans-serif;
 }
 
-.navbar-collapse {
-  background-color: transparent;
-  transition: background-color 0.3s ease;
+.Gsb {
+  font-family: "Giga-Sans-Light", sans-serif;
+}
+
+.Pfd {
+  font-family: "Playfair-Display", sans-serif;
+}
+
+/* Navbar section */
+
+.navbar {
+  transition: background-color 0.3 ease;
+  transition: 0.3s ease;
 }
 
 .navbar-collapse.show {
-  background-color: #f8f9fa; /* light gray or use your theme */
+  background-color: white;
 }
 
-.navbar {
-    transition: background-color 0.3 ease-in-out;
+.navbar-scrolled {
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.15);
 }
 
 .nav-link {
-    text-decoration: none;
-    padding: 5px;
-    color: #000; /* Default link color */
-  }
+  text-decoration: none;
+  padding: 5px;
+  color: black; /* Default link color */
+}
 
-  .nav-link.active {
-    text-decoration: underline;
-    text-decoration-color: yellowgreen; /* Color of the underline */
-    text-decoration-thickness: 3px; /* Thickness of the underline */
-    text-underline-offset: 4px; /* Margin from the text (distance of underline) */
-  }
+.nav-link:hover {
+  color: yellowgreen;
+}
+
+.nav-link.active {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: yellowgreen; /* Color of the underline */
+  text-decoration-thickness: 3px; /* Thickness of the underline */
+  text-underline-offset: 4px; /* Margin from the text (distance of underline) */
+}
+
+/* Products section */
+.card-body {
+  margin-top: -25px;
+}
