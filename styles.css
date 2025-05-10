@@ -43,6 +43,14 @@
 .navbar-scrolled {
   background-color: white;
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.15);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: padding 0.3s ease;
+}
+
+.navbar-toggler {
+  margin: 0; /* Ensure no extra margin is applied */
+  transition: none; /* Prevent unwanted movement */
 }
 
 .nav-link {
@@ -68,11 +76,8 @@
   margin-top: -25px;
 }
 
-@media (min-width: 768px){
-  .hide-overflow{
+@media (min-width: 768px) {
+  .hide-overflow {
     overflow-x: hidden;
   }
 }
-
-
-
