@@ -1,8 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Fonts */
 @font-face {
   font-family: "Giga-Sans-Bold";
   src: url(Fonts/Giga-Sans-Bold.otf);
@@ -23,7 +25,7 @@
 }
 
 .Gsb {
-  font-family: "Giga-Sans-Light", sans-serif;
+  font-family: "Giga-Sans-Bold", sans-serif;
 }
 
 .Pfd {
@@ -65,3 +67,5 @@
 .card-body {
   margin-top: -25px;
 }
+
+

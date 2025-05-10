@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
-  
+<body class="bg-body-tertiary overflow-x-hidden">
+
   <!-- Navigation Bar -->
   <nav class="navbar fixed-top navbar-expand-lg">
     <div class="container-fluid">
@@ -24,8 +24,8 @@
         <ul class="navbar-nav mb-2 mb-lg-0 me-0 gap-3 d-flex align-items-center">
           <li class="nav-item"><a class="nav-link Gsl" href="#home" onclick="setActive(this)">Home</a></li>
           <li class="nav-item"><a class="nav-link Gsl" href="#aboutus" onclick="setActive(this)">About us</a></li>
-          <li class="nav-item"><a class="nav-link Gsl" href="#services" onclick="setActive(this)">Services</a></li>
-          <li class="nav-item"><a class="nav-link Gsl" href="#contactus" onclick="setActive(this)">Contact us</a></li>
+          <li class="nav-item"><a class="nav-link Gsl" href="#products" onclick="setActive(this)">Services</a></li>
+          <li class="nav-item"><a class="nav-link Gsl" href="#footer" onclick="setActive(this)">Contact us</a></li>
         </ul>
       </div>
     </div>
@@ -38,7 +38,7 @@
       <!-- Background Image -->
       <div class="top-0 start-0 w-100 h-100 z-n1 d-none d-md-block">
         <img src="Assets/Model 1.jpg" alt="Photo" class="img-fluid w-100 h-100 object-fit-cover">
-      </div>      
+      </div>
 
       <!-- Grid Row Overlay -->
       <div class="row position-absolute top-0 start-0 w-100 h-100 m-0">
@@ -69,8 +69,8 @@
   </section>
 
   <!-- Products -->
-  <section class="w-100 h-100" id="products">
-    <div class="container-fluid bg-body-tertiary">
+  <section id="products">
+    <div class="container-fluid bg-body-tertiary mx-0 px-0">
       <div class="text-center pt-5">
         <p class="fs-1" style="font-family: 'Playfair-Display', sans-serif;">&mdash; PRODUCTS &mdash;</p>
       </div>
@@ -79,7 +79,8 @@
       <nav class="navbar navbar-expand-md bg-body-tertiary">
         <div class="container-fluid justify-content-between">
           <ul class="navbar-nav mx-auto gap-5">
-            <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl" onclick="setActive(this)">Brightening</a></li>
+            <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl" onclick="setActive(this)">Brightening</a>
+            </li>
             <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl" onclick="setActive(this)">Anti<span
                   style="font-family: sans-serif;">-</span>Acne</a></li>
             <li class="nav-item"><a href="#products" class="nav-link fs-5 Gsl" onclick="setActive(this)">Anti<span
@@ -87,9 +88,10 @@
           </ul>
         </div>
       </nav>
+
       <!-- Products Row -->
-      <div class="row gap-5 d-flex justify-content-center mt-5 w-auto">
-        <div class="col-md-2 h-100 m-0 p-0">
+      <div class="row gap-3 d-flex justify-content-center align-items-center mt-5">
+        <div class="col-md-3 h-auto m-0 p-0 d-flex flex-row">
           <div class="card shadow-sm">
             <img src="Assets/Product 2.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
@@ -97,14 +99,13 @@
               <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
-            <div class="d-flex mx-3 my-3 justify-content-between">
+            <div class="d-flex mx-3 my-3 justify-content-between align-items-center">
               <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 800</small></strong></p>
-              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
-                alt="Shoppe Logo">
+              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;" alt="Shoppe Logo">
             </div>
           </div>
         </div>
-        <div class="col-md-2 h-100 m-0 p-0">
+        <div class="col-md-3 h-auto m-0 p-0 d-flex flex-row">
           <div class="card shadow-sm">
             <img src="Assets/Product 1.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
@@ -112,14 +113,13 @@
               <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
-            <div class="d-flex mx-3 my-3 justify-content-between">
+            <div class="d-flex mx-3 my-3 justify-content-between justify-content-between align-items-center">
               <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 1,000</small></strong></p>
-              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
-                alt="Shoppe Logo">
+              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;" alt="Shoppe Logo">
             </div>
           </div>
         </div>
-        <div class="col-md-2 h-100 m-0 p-0">
+        <div class="col-md-3 h-auto m-0 p-0 d-flex flex-row">
           <div class="card shadow-sm">
             <img src="Assets/Product 1.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
@@ -127,17 +127,17 @@
               <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
-            <div class="d-flex mx-3 my-3 justify-content-between">
+            <div class="d-flex mx-3 my-3 justify-content-between justify-content-between align-items-center">
               <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 650</small></strong></p>
-              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
-                alt="Shoppe Logo">
+              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;" alt="Shoppe Logo">
             </div>
           </div>
         </div>
       </div>
-      <!-- Product Row 2 -->
-      <div class="row gap-5 d-flex justify-content-center mt-5 w-auto">
-        <div class="col-md-2 h-100 m-0 p-0">
+
+      <!-- Product Row 1 -->
+      <div class="row gap-3 d-flex justify-content-center mt-5 w-auto align-items-center">
+        <div class="col-md-3 h-100 m-0 p-0">
           <div class="card shadow-sm">
             <img src="Assets/Product 2.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
@@ -145,14 +145,13 @@
               <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
-            <div class="d-flex mx-3 my-3 justify-content-between">
+            <div class="d-flex mx-3 my-3 justify-content-between justify-content-between align-items-center">
               <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 500</small></strong></p>
-              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
-                alt="Shoppe Logo">
+              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;" alt="Shoppe Logo">
             </div>
           </div>
         </div>
-        <div class="col-md-2 h-100 m-0 p-0">
+        <div class="col-md-3 h-100 m-0 p-0">
           <div class="card shadow-sm">
             <img src="Assets/Product 2.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
@@ -160,14 +159,13 @@
               <p class="card-text Gsl "><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
-            <div class="d-flex mx-3 my-3 justify-content-between">
+            <div class="d-flex mx-3 my-3 justify-content-between justify-content-between align-items-center">
               <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 800</small></strong></p>
-              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
-                alt="Shoppe Logo">
+              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;" alt="Shoppe Logo">
             </div>
           </div>
         </div>
-        <div class="col-md-2 h-100 m-0 p-0">
+        <div class="col-md-3 h-100 m-0 p-0">
           <div class="card shadow-sm">
             <img src="Assets/Product 1.jpg" class="card-img-top img-fluid" alt="...">
             <div class="card-body rounded-top-5 position-relative bg-white z-2 shadow-md">
@@ -175,10 +173,86 @@
               <p class="card-text Gsl"><small>A product formulated to give you clearer skin and preventsit from
                   breaking out.</small></p>
             </div>
-            <div class="d-flex mx-3 my-3 justify-content-between">
+            <div class="d-flex mx-3 my-3 justify-content-between justify-content-between align-items-center">
               <p class="w-auto m-0 Gsl"><strong><small>&#x20B1 1,000</small></strong></p>
-              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;"
-                alt="Shoppe Logo">
+              <img src="Assets/Shopee Logo.png" class="img-fluid" style="height: 40px; width: auto;" alt="Shoppe Logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Group Products  -->
+      <div class="row d-flex w-100 h-100 gap-0 pt-5 mx-0">
+        <div class="col-md-7 px-0 h-auto d-flex flex-row">
+          <img src="Assets/Model 2.jpg" alt="Model" class="img-fluid object-fit-cover">
+        </div>
+        <div class="col-md-5 d-flex flex-column align-items-center justify-content-center bg-white h-auto">
+          <p class="fs-2 Gsb mx-4">Your skin<span style="font-family: sans-serif;">'</span>s partner for a better you.
+          </p>
+          <p class="fs-5 Gsl mx-4">Formulated with ingredients to help you achieve the perfect look. The result:
+            impossible smooth, luminescent skin that glows with a healthy<span
+              style="font-family: sans-serif;">-</span>looking complexion.</p>
+        </div>
+      </div>
+
+      <!--Group Products 1 -->
+      <div class="row d-flex w-100 h-100 gap-0 mx-0">
+        <div class="col-md-7 d-flex flex-column justify-content-center align-items-center bg-white">
+          <p class="fs-5 Gsl mx-4">The Anti<span style="font-family: sans-serif;">-</span>Acne Skincare System is
+            specially formulated to treat imperfections and acne.</p>
+          <p class="fs-5 Gsl mx-4">It is a dual<span style="font-family: sans-serif;">-</span>phase system that reduces
+            and prevents pimples, blackheads, and other skin blemishes while providing essential nutrients to maintain a
+            healthy complexion.</p>
+        </div>
+        <div class="col-md-5 px-0 h-auto d-flex flex-row">
+          <img src="Assets/Group Products 1.png" alt="Model" class="img-fluid">
+        </div>
+      </div>
+
+      <!--Group Products 2 -->
+      <div class="row d-flex w-100 h-100 gap-0 mx-0">
+        <div class="col-md-7 px-0 h-auto d-flex flex-row">
+          <img src="Assets/Group Products 2.png" alt="Model" class="img-fluid">
+        </div>
+        <div class="col-md-5 d-flex flex-column justify-content-center align-items-center bg-white">
+          <p class="fs-5 Gsl mx-4">This reveals your radiant skin by helping treat the problem of problematic skin.</p>
+          <p class="fs-5 Gsl mx-4">A combination of natural extracts will visibly lighten and brighten uneven skin
+            tones, acne scars, age spots, and pigmentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About us Section -->
+  <section id="aboutus" class="pt-0 mt-0 pb-5 mb-5">
+    <div class="container-fluid w-100 px-0">
+      <div class="d-flex flex-column justify-content-center align-items-center pb-5 mb-5">
+        <div class="bg-black w-100 text-center py-5 mb-5">
+          <p class="fs-1 text-white Gsl pt-5 pb-5 mb-5">&mdash; KNOW MORE &mdash;</p>
+        </div>
+        <div class="row gap-4 d-flex justify-content-center z-2" style="margin-top: -110px;">
+          <div class="col-md-2 p-0 m-0 text-center">
+            <img src="Assets/Model 4.png" alt="Model"
+              class="img-fluid object-fit-cover rounded-3 h-75 w-auto shadow-lg">
+            <div class="div d-flex flex-column">
+              <p class="fs-4 Pfd">ANTI-ACNE</p>
+              <p class="fs-6 Gsl" style="color: gray;">Read</p>
+            </div>
+          </div>
+          <div class="col-md-2 p-0 m-0 text-center">
+            <img src="Assets/Model 5.jpg" alt="Model"
+              class="img-fluid object-fit-cover rounded-3 h-75 w-auto shadow-lg">
+            <div class="d-flex flex-column">
+              <p class="fs-4 Pfd">BRIGHTENING</p>
+              <p class="fs-6 Gsl" style="color: gray;">Read</p>
+            </div>
+          </div>
+          <div class="col-md-2 p-0 m-0 text-center">
+            <img src="Assets/Model 3.jpg" alt="Model"
+              class="img-fluid object-fit-cover rounded-3 h-75 w-auto shadow-lg">
+            <div class="d-flex flex-column">
+              <p class="fs-4 Pfd">ANTI-AGING</p>
+              <p class="fs-6 Gsl" style="color: gray;">Read</p>
             </div>
           </div>
         </div>
@@ -186,14 +260,46 @@
     </div>
   </section>
 
-  <section class="w-100 h-100">
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center">
-        <div class="col-md-6">
-          
-        </div>
-        <div class="col-md-6">
-          
+  <!--Footer -->
+  <section id="footer" class="m-0 p-0 bg-black">
+    <div class="container-fluid w-auto h-auto px-0 mx-0">
+      <div class="py-auto my-auto">
+        <div class="row my-auto d-flex justify-content-center">
+          <div class="col-md-4 d-flex flex-column justify-content-center align-items-center py-5 w-auto mx-auto">
+            <p class="fs-1 text-white Pfd">Tori Skin</p>
+            <div class="d-flex flex-row justify-content-center align-items-center">
+              <a href="#footer"><i class='bx bxl-facebook-circle fs-5 text-white'></i></a>
+              <a href="#footer"><i class='bx bxl-instagram-alt fs-5 text-white'></i></a>
+            </div>
+          </div>
+          <div class="col-md-2 d-flex flex-column align-items-start p-3">
+            <p class="Gsl fs-2 text-white">Home</p>
+            <p class="Gsl small text-white">About us</p>
+            <p class="Gsl small text-white">Products</p>
+            <p class="Gsl small text-white">Distributors</p>
+            <p class="Gsl small text-white">Packages</p>
+          </div>
+          <div class="col-md-2 d-flex flex-column align-items-start p-3">
+            <p class="Gsl fs-2 text-white">About Us</p>
+            <p class="Gsl small text-white">About us</p>
+            <p class="Gsl small text-white">Get Started</p>
+            <p class="Gsl small text-white">Medid</p>
+            <p class="Gsl small text-white">Gallery</p>
+          </div>
+          <div class="col-md-2 d-flex flex-column align-items-start p-3">
+            <p class="Gsl fs-2 text-white">Products</p>
+            <p class="Gsl small text-white">Product Line</p>
+            <p class="Gsl small text-white">Anti Acne</p>
+            <p class="Gsl small text-white">Brightening</p>
+            <p class="Gsl small text-white">Whitening</p>
+          </div>
+          <div class="col-md-2 d-flex flex-column align-items-start p-3">
+            <p class="Gsl fs-2 text-white">Contact Us</p>
+            <p class="Gsl small text-white"><span style="font-family: sans-serif;">(</span>000<span
+                style="font-family: sans-serif;">) </span>123<span style="font-family: sans-serif;"> - </span>123<span
+                style="font-family: sans-serif;">4</span></p>
+            <p class="Gsl small text-white">customercare<span style="font-family: sans-serif;">@</span>toriskin.com</p>
+          </div>
         </div>
       </div>
     </div>
@@ -223,7 +329,7 @@
     window.addEventListener('scroll', () => {
       if (window.scrollY >= 56) {
         navEl.classList.add('navbar-scrolled');
-      }else if(window.scrollY < 56){
+      } else if (window.scrollY < 56) {
         navEl.classList.remove('navbar-scrolled');
       }
     });
