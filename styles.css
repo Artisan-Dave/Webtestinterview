@@ -68,5 +68,11 @@
   margin-top: -25px;
 }
 
+@media (min-width: 768px){
+  .hide-overflow{
+    overflow-x: hidden;
+  }
+}
+
 
 
